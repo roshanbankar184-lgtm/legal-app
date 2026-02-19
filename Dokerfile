@@ -1,0 +1,7 @@
+legal_app/
+ ├── app.py
+ └── Dockerfile
+  FROM python:3.9
+WORKDIR /app
+COPY . .
+CMD ["python", "app.py"]
